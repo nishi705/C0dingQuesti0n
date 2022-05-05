@@ -4,22 +4,19 @@ public class DivereseOfCharacter {
     public int solve(final String A) {
 
 
-        int count =0;
-        int count1 =0;
-        for(int i=0;i<A.length();i++)
-        {
+        int count = 0;
+        int count1 = 0;
+        for (int i = 0; i < A.length(); i++) {
 
-            if(A.charAt(i)>=65 && A.charAt(i)<=122)
-            {
+            if (A.charAt(i) >= 65 && A.charAt(i) <= 122) {
                 count1++;
-            }
-            else
-            {
+            } else {
                 count++;
             }
 
 
         }
-        return Math.max(count,count1);
+        return Math.max(count, count1);
 
+    }
 }
